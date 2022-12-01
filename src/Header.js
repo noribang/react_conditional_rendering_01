@@ -5,20 +5,21 @@ import Logout from './Logout'
 function Header({ isLoggedIn }) {
 //   console.log(isLoggedIn)
 
-function getButton() {
-    if (isLoggedIn) {
-        return <Logout />
-    } else {
-        return <Login />
-    }
-}
+// function getButton() {
+//     if (isLoggedIn) {
+//         return <Logout />
+//     } else {
+//         return <Login />
+//     }
+// }
 
   return (
     <header>
       <h1>PetLand</h1>
       <nav>
         {/* <Login /> */}
-        {getButton()}
+        {/* {getButton()} */}
+        {isLoggedIn ? <Logout /> : <Login />}
       </nav>
     </header>
   )
