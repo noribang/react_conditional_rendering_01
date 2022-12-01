@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div>
-      <Header isLoggedIn={true} />
+      <Header isLoggedIn={false} />
       <main>{petCards}</main>
     </div>
   );
